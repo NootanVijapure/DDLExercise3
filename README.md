@@ -1,38 +1,21 @@
-# DDL exercise
-Creating Tables:
-Create a table named Movies with the following columns:
-movie_id (integer)
-title (varchar, maximum length 100)
-director (varchar, maximum length 50)
-release_year (integer)
-genre (varchar, maximum length 50)
+# DDL exercise3
+Creating Tables with Null and Not Null Constraints:
+Create a table named Planets with the following columns:
 
-Altering Tables:
-Alter the Movies table to add a new column named rating of type decimal(3, 1).
+planet_id (integer)
+planet_name (varchar, maximum length 50, not null)
+diameter (decimal)
+distance_from_sun (decimal, not null)
+Ensure that planet_name column does not allow NULL values, while distance_from_sun can have NULL values.
+
+Altering Tables with Not Null Constraints:
+Alter the Planets table to modify the diameter column to not allow NULL values.
 
 Dropping Tables:
-Create a new table named Students with columns:
+Create a new table named Galaxies with the following columns:
 
-student_id (integer)
-student_name (varchar, maximum length 50)
-age (integer)
-grade (varchar, maximum length 2)
-Then, drop the Students table.
-
-Truncating Tables:
-Create a table named Events with columns:
-
-event_id (integer)
-event_name (varchar, maximum length 100)
-date (date)
-location (varchar, maximum length 100)
-Insert some sample data into the Events table. Once done, truncate the table to remove all records while keeping the table structure intact.
-
-Renaming Tables:
-Create a table named Restaurants with columns:
-
-restaurant_id (integer)
-name (varchar, maximum length 50)
-cuisine (varchar, maximum length 50)
-location (varchar, maximum length 100)
-Rename the table to DiningSpots.
+galaxy_id (integer)
+galaxy_name (varchar, maximum length 50, not null)
+description (text)
+number_of_stars (integer)
+Then, drop the Galaxies table
